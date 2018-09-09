@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+  <img src="/logo.png" alt="logo" width="295" height="130" />
+<h2>Quotation</h2>
+<p>When submitting this form, the result will be opened in a new browser tab:</p>
+
+<form action="/result">
+  First name:<br>
+  <input type="text" name="firstname" value="John">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Smith">
+  <br>
+  Farm name:<br>
+  <input type="text" name="farmname" value="Hello Farm">
+  <br>
+  Farm Area Postcode:<br>
+  <input type="number" name="farmareapostcode" value="2830">
+  <br>
+  Cover Amount(AUD):<br>
+  <input type="number" name="coveramount" value="100000">
+  <br>
+  Cover Period (Year):<br>
+  <input type="number" name="coverperiodyear" value="2017">
+  <br>
+  Cover Period (Season):<br>
+    <select name="season">
+      <option value="spring">Spring</option>
+      <option value="summer">Summer</option>
+      <option value="autumn">Autumn</option>
+      <option value="winter">Winter</option>
+    </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

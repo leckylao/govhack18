@@ -1,0 +1,23 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: R6FLn7Pgud9ebvY7
+      MYSQL_DATABASE: argi_insur
+      MYSQL_USER: govhack
+      MYSQL_PASSWORD: 4QD3aJWRtnev5tZf
+    user: "1000"
+    volumes:
+    - ./images/db/mysql:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
